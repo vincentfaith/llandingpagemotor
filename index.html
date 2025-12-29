@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Motorcycles - Private Access</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  .overlay-dark { background-color: rgba(0,0,0,0.6); }
+  section.bg-cover { background-size: cover; background-position: center; }
+  .fade-in { opacity: 0; transform: translateY(20px); transition: all 1s ease-out; }
+  .fade-in.show { opacity: 1; transform: translateY(0); }
+  .hover-scale:hover { transform: scale(1.05); transition: transform 0.3s; }
+</style>
+</head>
+<body class="bg-black text-white overflow-x-hidden scroll-smooth">
+
+<!-- HERO SECTION -->
+<section id="hero" class="relative min-h-screen overflow-hidden">
+  <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+    <source src="video.mp4" type="video/mp4">
+  </video>
+  <div class="absolute inset-0 overlay-dark z-10"></div>
+  <div class="relative z-20 flex flex-col items-center justify-center min-h-screen text-center px-6">
+    <p class="uppercase tracking-[0.35em] text-sm mb-6 text-gray-300 fade-in">Curated Performance Experience</p>
+    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-8 fade-in">
+      Every Detail <span class="block text-gray-300 font-light">Is Engineered With Purpose</span>
+    </h1>
+    <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-12 fade-in">
+      Not just a motorcycle — an experience, a presence, a statement.
+    </p>
+    <a href="#lead-form" class="inline-block border border-white px-14 py-4 text-sm tracking-widest uppercase hover:bg-white hover:text-black transition duration-300 fade-in">
+      Request Private Access
+    </a>
+  </div>
+</section>
+
+<!-- SIGNATURE COLLECTION -->
+<section id="collection" class="relative min-h-screen bg-cover bg-center"
+         style="background-image:url('https://images.unsplash.com/photo-1612197526595-08ab8f1bfa22?auto=format&fit=crop&w=1950&q=80');">
+  <div class="absolute inset-0 overlay-dark z-10"></div>
+  <div class="relative z-20 flex flex-col items-center justify-center min-h-screen text-center px-6">
+    <h2 class="text-4xl md:text-5xl font-bold mb-12 text-gray-200 fade-in">Signature Collection</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="hover-scale fade-in"><img src="imej1.jpg" alt="Motor 1" class="rounded-lg w-full object-cover"><p class="mt-2 text-gray-300">Ducati Panigale V4</p></div>
+      <div class="hover-scale fade-in"><img src="imej2.jpg" alt="Motor 2" class="rounded-lg w-full object-cover"><p class="mt-2 text-gray-300">Yamaha R1</p></div>
+      <div class="hover-scale fade-in"><img src="imej3.jpg" alt="Motor 3" class="rounded-lg w-full object-cover"><p class="mt-2 text-gray-300">KTM RC8</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CURATED HIGHLIGHTS -->
+<section id="highlights" class="relative min-h-screen bg-cover bg-center"
+         style="background-image:url('https://images.unsplash.com/photo-1609630875171-b1321377ee65?auto=format&fit=crop&w=1950&q=80');">
+  <div class="absolute inset-0 overlay-dark z-10"></div>
+  <div class="relative z-20 flex flex-col items-center justify-center min-h-screen text-center px-6 text-gray-200">
+    <h2 class="text-4xl md:text-5xl font-bold mb-12 fade-in">Why Our Motors Stand Out</h2>
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div class="bg-black bg-opacity-50 p-6 rounded-lg hover-scale fade-in">
+        <p class="text-yellow-400 font-bold mb-2 text-2xl">1</p>
+        <p>Hand-picked for performance & aesthetics</p>
+      </div>
+      <div class="bg-black bg-opacity-50 p-6 rounded-lg hover-scale fade-in">
+        <p class="text-yellow-400 font-bold mb-2 text-2xl">2</p>
+        <p>Exclusive models unavailable to the public</p>
+      </div>
+      <div class="bg-black bg-opacity-50 p-6 rounded-lg hover-scale fade-in">
+        <p class="text-yellow-400 font-bold mb-2 text-2xl">3</p>
+        <p>Inspected to the highest quality standards</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEAD CAPTURE FORM -->
+<section id="lead-form" class="relative min-h-screen bg-black bg-opacity-90">
+  <div class="relative z-20 flex flex-col items-center justify-center min-h-screen text-center px-6">
+    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-200 fade-in">Request Private Access</h2>
+    <p class="text-gray-400 mb-12 max-w-2xl fade-in">Access is limited and subject to approval. Fill the form below to get in touch.</p>
+    <form class="space-y-6 text-left max-w-xl w-full fade-in">
+      <input type="text" placeholder="Full Name" class="w-full p-4 bg-gray-900 border border-gray-700 rounded focus:outline-none focus:border-white">
+      <input type="text" placeholder="WhatsApp Number" class="w-full p-4 bg-gray-900 border border-gray-700 rounded focus:outline-none focus:border-white">
+      <select class="w-full p-4 bg-gray-900 border border-gray-700 rounded focus:outline-none focus:border-white">
+        <option>Estimated Budget</option>
+        <option>80K – 120K</option>
+        <option>120K – 200K</option>
+        <option>200K+</option>
+      </select>
+      <button class="w-full border border-white py-4 uppercase tracking-widest hover:bg-white hover:text-black transition duration-300">
+        Submit Application
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF / TRUSTED BY -->
+<section id="social-proof" class="relative py-32 bg-black">
+  <div class="max-w-6xl mx-auto text-center px-6">
+
+    <!-- Heading -->
+    <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-200 fade-in">
+      Trusted by Riders & Collectors
+    </h2>
+    <p class="text-gray-400 mb-20 fade-in">
+      A private network built on trust, quality, and discretion
+    </p>
+
+    <!-- LOGO ROW -->
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-12 items-center mb-20 fade-in">
+      <img src="ducati.jpg" class="mx-auto opacity-50 hover:opacity-90 transition duration-300 grayscale">
+      <img src="yamaha.jpg" class="mx-auto opacity-50 hover:opacity-90 transition duration-300 grayscale">
+      <img src="ktm.png" class="mx-auto opacity-50 hover:opacity-90 transition duration-300 grayscale">
+      <img src="bmw.jpg" class="mx-auto opacity-50 hover:opacity-90 transition duration-300 grayscale">
+      <img src="brembo.jpeg" class="mx-auto opacity-50 hover:opacity-90 transition duration-300 grayscale">
+    </div>
+
+    <!-- TRUST BADGES -->
+    <div class="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto text-gray-300 fade-in">
+      <div class="flex items-center justify-center gap-3">
+        <span class="text-yellow-400 text-xl">✔</span>
+        Verified Selection
+      </div>
+      <div class="flex items-center justify-center gap-3">
+        <span class="text-yellow-400 text-xl">✔</span>
+        Quality Inspected
+      </div>
+      <div class="flex items-center justify-center gap-3">
+        <span class="text-yellow-400 text-xl">✔</span>
+        Private Access Only
+      </div>
+      <div class="flex items-center justify-center gap-3">
+        <span class="text-yellow-400 text-xl">✔</span>
+        Trusted Network
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FINAL CTA -->
+<section id="final-cta" class="relative min-h-screen bg-cover bg-center"
+         style="background-image:url('https://images.unsplash.com/photo-1603376484019-1dcefd35c429?auto=format&fit=crop&w=1950&q=80');">
+  <div class="absolute inset-0 overlay-dark z-10"></div>
+  <div class="relative z-20 flex flex-col items-center justify-center min-h-screen text-center px-6">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-200 fade-in">Ready to Experience Excellence?</h2>
+    <p class="text-yellow-400 mb-8 fade-in">Limited Private Access Available</p>
+    <a href="#lead-form" class="inline-block border border-white px-14 py-4 text-sm tracking-widest uppercase hover:bg-white hover:text-black transition duration-300 fade-in">
+      Request Private Access
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 py-12 text-gray-400 text-center">
+  &copy; 2025 Premium Motorcycles. All rights reserved.
+</footer>
+
+<script>
+  // Fade-in animation on scroll
+  const faders = document.querySelectorAll('.fade-in');
+  const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+  const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('show');
+      appearOnScroll.unobserve(entry.target);
+    });
+  }, appearOptions);
+  faders.forEach(fader => appearOnScroll.observe(fader));
+</script>
+
+</body>
+</html>
