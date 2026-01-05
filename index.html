@@ -86,9 +86,13 @@
         <option>120K – 200K</option>
         <option>200K+</option>
       </select>
-      <button class="w-full border border-white py-4 uppercase tracking-widest hover:bg-white hover:text-black transition duration-300">
-        Submit Application
-      </button>
+      <button
+            type="button"
+            onclick="window.open('https://api.whatsapp.com/send?phone=60199876843&text=Halo%2C%20saya%20tertarik%20untuk%20mendapatkan%20akses%20Private%20Access%20eksklusif.%0AMohon%20informasi%20lebih%20lanjut%20mengenai%20detail%20dan%20ketersediaannya.%0ATerima%20kasih.', '_blank')"
+            class="w-full border border-white py-4 uppercase tracking-widest hover:bg-white hover:text-black transition duration-300">
+            Submit Application
+        </button>
+
     </form>
   </div>
 </section>
@@ -138,18 +142,34 @@
 </section>
 
 
+
 <!-- FINAL CTA -->
 <section id="final-cta" class="relative min-h-screen bg-cover bg-center"
          style="background-image:url('https://images.unsplash.com/photo-1603376484019-1dcefd35c429?auto=format&fit=crop&w=1950&q=80');">
+
   <div class="absolute inset-0 overlay-dark z-10"></div>
+
   <div class="relative z-20 flex flex-col items-center justify-center min-h-screen text-center px-6">
-    <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-200 fade-in">Ready to Experience Excellence?</h2>
-    <p class="text-yellow-400 mb-8 fade-in">Limited Private Access Available</p>
-    <a href="#lead-form" class="inline-block border border-white px-14 py-4 text-sm tracking-widest uppercase hover:bg-white hover:text-black transition duration-300 fade-in">
+    
+    <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-200 fade-in">
+      Ready to Experience Excellence?
+    </h2>
+
+    <p class="text-yellow-400 mb-8 fade-in">
+      Limited Private Access Available
+    </p>
+
+    <a
+      href="https://api.whatsapp.com/send?phone=60199876843&text=Halo%2C%20saya%20tertarik%20untuk%20mendapatkan%20akses%20Private%20Access%20eksklusif.%0AMohon%20informasi%20lebih%20lanjut%20mengenai%20detail%20dan%20ketersediaannya.%0ATerima%20kasih."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block border border-white px-14 py-4 text-sm tracking-widest uppercase hover:bg-white hover:text-black transition duration-300 fade-in">
       Request Private Access
     </a>
+
   </div>
 </section>
+
 
 <!-- FOOTER -->
 <footer class="bg-gray-900 py-12 text-gray-400 text-center">
@@ -171,4 +191,5 @@
 </script>
 
 </body>
+
 </html>
